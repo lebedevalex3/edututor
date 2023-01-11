@@ -14,7 +14,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -83,6 +83,13 @@ const config = {
             position: 'left',
             label: 'Алгебра',
           },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'geo',
+            label: 'Геометрия',
+          },
+
           { to: '/blog', label: 'Блог', position: 'left' },
           {
             href: 'https://www.youtube.com/channel/UCbkT-RPOSasvKDOxjz2UhFw',
@@ -98,25 +105,21 @@ const config = {
             title: 'Материалы',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Алгебра',
                 to: '/docs/square-equations/doc2',
+              },
+              {
+                label: 'Геометрия',
+                to: '/docs/geometry/inscribed-quadrilateral/doc1',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Сообщества',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'vk',
+                href: 'https://vk.com/id371761625',
               },
             ],
           },
@@ -124,12 +127,12 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'Блог',
                 to: '/blog',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Канал на youtube',
+                href: 'https://www.youtube.com/channel/UCbkT-RPOSasvKDOxjz2UhFw',
               },
             ],
           },

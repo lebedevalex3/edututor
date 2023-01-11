@@ -25,6 +25,8 @@ const sidebars = {
       label: 'Квадратные уравнения',
       items: ['square-equations/doc2'],
     },
+  ],
+  geo: [
     {
       type: 'category',
       label: 'Вписанные и описанные четырехугольники',
