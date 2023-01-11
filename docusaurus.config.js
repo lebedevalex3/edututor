@@ -74,14 +74,14 @@ const config = {
         title: 'Главная страница',
         logo: {
           alt: 'Логотип сайта',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Курсы',
+            label: 'Алгебра',
           },
           { to: '/blog', label: 'Блог', position: 'left' },
           {
@@ -99,7 +99,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/square-equations/doc2',
               },
             ],
           },
