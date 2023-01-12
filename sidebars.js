@@ -30,7 +30,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Вписанные и описанные четырехугольники',
-      items: ['geometry/inscribed-quadrilateral/doc1'],
+      items: [
+        'geometry/inscribed-quadrilateral/doc1',
+        'geometry/inscribed-quadrilateral/doc2',
+      ],
     },
   ],
 };
