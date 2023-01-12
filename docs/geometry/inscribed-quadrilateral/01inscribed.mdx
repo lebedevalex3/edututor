@@ -47,7 +47,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
     <div>
       <Image alt="" img={require('./assets/img02.png')} width={'60%'} />
       Пусть четырёхугольник <TeX math="ABCD" /> вписан в окружность. Докажем, что{' '}
-      <TeX math="\angle A + \angle B = 180^0. " />
+      <TeX math="\angle A + \angle C = 180^0. " />
       <br />
       Так как углы <TeX math="A " /> и <TeX math="B " /> являются вписанными, то{' '}
       <TeX math="\angle A=\dfrac12" />
@@ -60,7 +60,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
       <TeX math="BCD" /> +&#9697;
       <TeX math="DAB=360^0." /> Из этого следует, что <TeX math="\angle A + \angle C =180^0." />
       <br />
-      Аналогично: <TeX math="\angle B + \angle D =180^0." />
+      Аналогично: <TeX math="\angle B + \angle D =180^0. \quad \blacksquare" />
     </div>
   </div>
 </details>
@@ -68,8 +68,46 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 Распознать четырёхугольники, около которых можно описать окружность, позволяет следующая теорема.
 
 :::note теорема (признак)
-Если в четырёхугольнике сумма пртиволежащих углов равна $180^0$, то он является вписанным в окружность.
+Если в четырёхугольнике сумма противолежащих углов равна $180^0$, то он является вписанным в окружность.
 :::
+
+<details>
+  <summary>
+    <b>Доказательство</b>
+  </summary>
+  <div>
+    <div>
+      <p>
+        Пусть в четырехугольнике <TeX math="ABCD" /> сумма противолежащих углов
+        <TeX math="\angle A + \angle C = 180^0. \quad(1)" />
+      </p>
+      <Image
+        alt="признак вписанного четырёхугольника"
+        img={require('./assets/img02_06.png')}
+        width={'80%'}
+      />
+      <p>
+        Предположим, что около него нельзя описать окружность.Тогда опишем
+        окружность около треугольника <TeX math="ABD" />, в таком случае точка{' '}
+        <TeX math="C" /> будет лежать вне или внутри этой окружности. Пусть она
+        лежит вне её.
+      </p>
+      <p>
+        Тогда прямая <TeX math="CD" /> пересекает окружность в другой точке;
+        пусть в точке <TeX math="C_1" />. Значит четырёхугольник{' '}
+        <TeX math="ABC_1D" /> является вписанным и{' '}
+        <TeX math="\angle A + \angle C_1 = 180^0. \quad (2)" />{' '}
+      </p>
+      Из равенств <TeX math="(1)" /> и <TeX math="(2)" /> заключаем, что{' '}
+      <TeX math="\angle C = \angle C_1" />
+      , но этого не может быть так <TeX math="\angle C_1" /> является внешним углом
+      треугольника <TeX math="BC_1C" /> и большего любого не смежного с ним, в частности{' '}
+      <TeX math="\angle C. \quad \blacksquare" />
+    </div>
+  </div>
+</details>
+
+Доказательство
 
 Обе теоремы можно сформулировать в виде одной теоремы:
 :::note теорема
