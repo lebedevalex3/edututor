@@ -24,6 +24,7 @@
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.4",
     "clsx": "^1.2.1",
+    "docusaurus-plugin-yandex-metrica": "^1.1.0",
     "hast-util-is-element": "^1.1.0",
     "katex": "^0.16.4",
     "prism-react-renderer": "^1.3.5",

@@ -28,7 +28,15 @@ const config = {
     defaultLocale: 'ru',
     locales: ['ru'],
   },
-  plugins: [['@docusaurus/plugin-ideal-image', {}]],
+  plugins: [
+    ['@docusaurus/plugin-ideal-image', {}],
+    [
+      'docusaurus-plugin-yandex-metrica',
+      {
+        counterID: '92029994',
+      },
+    ],
+  ],
 
   presets: [
     [
