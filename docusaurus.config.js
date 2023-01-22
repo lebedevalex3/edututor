@@ -102,6 +102,12 @@ const config = {
             sidebarId: 'geo',
             label: 'Геометрия',
           },
+          // {
+          //   type: 'docSidebar',
+          //   position: 'left',
+          //   sidebarId: 'latin',
+          //   label: 'Латинский язык',
+          // },
 
           { to: '/blog', label: 'Блог', position: 'left' },
           {

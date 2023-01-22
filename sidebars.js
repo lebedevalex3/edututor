@@ -36,6 +36,13 @@ const sidebars = {
       ],
     },
   ],
+  // latin: [
+  //   {
+  //     type: 'category',
+  //     label: 'Учебник  Lingva Latina (Orberg)',
+  //     items: ['latin/lesson16/lesson16'],
+  //   },
+  // ],
 };
 
 module.exports = sidebars;

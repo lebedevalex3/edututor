@@ -13,7 +13,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 ### Какой четырехугольник называют вписанным?
 
-:::note Определение
+:::info Определение
 **Вписанный четырёхугольник** - это четырёхугольник, вершины которого лежат на одной окружности.
 :::
 В этом случае окружность называется **описанной**.
@@ -35,17 +35,29 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 ### Свойство и признак вписанного четырехугольника {#pr}
 
-:::note теорема (свойство)
+:::info теорема (свойство)
 Если четырехугольник является вписанным в окружность, то сумма его противолежащих углов равна $180^0.$
 :::
 
-<details>
-  <summary>
-    <b>Доказательство</b>
-  </summary>
-  <div>
-    <div>
-      <Image alt="" img={require('./assets/img02.png')} width={'60%'} />
+<Image
+  alt="свойство вписанного четырехугольника"
+  img={require('./assets/img02_10.png')}
+  width={'80%'}
+/>
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Доказательство свойства</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+    <Image alt="" img={require('./assets/img02.png')} width={'50%'} />
       Пусть четырёхугольник <TeX math="ABCD" /> вписан в окружность. Докажем, что{' '}
       <TeX math="\angle A + \angle C = 180^0. " />
       <br />
@@ -61,23 +73,37 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
       <TeX math="DAB=360^0." /> Из этого следует, что <TeX math="\angle A + \angle C =180^0." />
       <br />
       Аналогично: <TeX math="\angle B + \angle D =180^0. \quad \blacksquare" />
-    </div>
-  </div>
-</details>
+
+</Typography>
+
+  </AccordionDetails>
+</Accordion>
 
 Распознать четырёхугольники, около которых можно описать окружность, позволяет следующая теорема.
 
-:::note теорема (признак)
+:::info теорема (признак)
 Если в четырёхугольнике сумма противолежащих углов равна $180^0$, то он является вписанным в окружность.
 :::
 
-<details>
-  <summary>
-    <b>Доказательство</b>
-  </summary>
-  <div>
-    <div>
-      <p>
+<Image
+  alt="признак вписанного четырехугольника"
+  img={require('./assets/img02_11.png')}
+  width={'80%'}
+/>
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Доказательство признака</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+ <p>
         Пусть в четырехугольнике <TeX math="ABCD" /> сумма противолежащих углов
         <TeX math="\angle A + \angle C = 180^0. \quad(1)" />
       </p>
@@ -87,7 +113,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
         width={'80%'}
       />
       <p>
-        Предположим, что около него нельзя описать окружность.Тогда опишем
+        Предположим, что около четырёхугольника нельзя описать окружность.Тогда опишем
         окружность около треугольника <TeX math="ABD" />, в таком случае точка{' '}
         <TeX math="C" /> будет лежать вне или внутри этой окружности. Пусть она
         лежит вне её.
@@ -103,21 +129,23 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
       , но этого не может быть так <TeX math="\angle C_1" /> является внешним углом
       треугольника <TeX math="BC_1C" /> и большего любого не смежного с ним, в частности{' '}
       <TeX math="\angle C. \quad \blacksquare" />
-    </div>
-  </div>
-</details>
+</Typography>
 
-Доказательство
+  </AccordionDetails>
+</Accordion>
 
-Обе теоремы можно сформулировать в виде одной теоремы:
-:::note теорема
-Для того чтобы четырёхугольник был вписанным в окружность, **необходимо и достаточно**, чтобы сумма его противолежащих углов была равна $180^0$.
+<br />
+<p>Обе теоремы можно сформулировать в виде одной теоремы:</p>
+
+:::info теорема
+Для того чтобы четырёхугольник был вписанным в окружность, **необходимо
+и достаточно**, чтобы сумма его противолежащих углов была равна $180^0$.
 :::
 
 <Image
   alt="необходимое и достаточное условие вписанного четырехугольника"
   img={require('./assets/img03.png')}
-  width={'90%'}
+  width={'80%'}
 />
 
 :::tip Следствия из теоремы
@@ -127,3 +155,15 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 - Около трапеции можно описать окружность, только если она равнобедренная
 
 :::
+
+### Вопросы для самоконтроля
+
+1. Какой четырёхугольник называют вписанным?
+2. В каком случае говорят, что окружность описана около четырёхугольника?
+3. Каким свойством обладают углы вписанного четырёхугольника?
+4. При каком условии четырёхугольник является вписанным?
+
+### Ресурсы {#res}
+
+[Задачи I и II уровня сложности](https://disk.yandex.ru/i/QpHbXwU2-jyLmw)<br />
+[Задачи III уровня сложности](https://disk.yandex.ru/i/km43bZz7sVzMNw)
