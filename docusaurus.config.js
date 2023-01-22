@@ -47,6 +47,12 @@ const config = {
           trackingID: 'G-X8F94FPYBQ',
           anonymizeIP: true,
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [math],
