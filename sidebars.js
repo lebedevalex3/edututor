@@ -35,6 +35,14 @@ const sidebars = {
         'geometry/inscribed-quadrilateral/doc2',
       ],
     },
+    {
+      type: 'category',
+      label: 'Подобные треугольники',
+      items: [
+        'geometry/similar_triangles/doc1',
+        'geometry/similar_triangles/doc2',
+      ],
+    },
   ],
   // latin: [
   //   {
