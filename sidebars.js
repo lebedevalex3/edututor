@@ -23,7 +23,12 @@ const sidebars = {
     {
       type: 'category',
       label: 'Квадратные уравнения',
-      items: ['square-equations/doc2'],
+      items: ['algebra/square-equations/doc2'],
+    },
+    {
+      type: 'category',
+      label: 'Степень и свойства степени',
+      items: ['algebra/degree_exponent/doc1'],
     },
   ],
   geo: [
