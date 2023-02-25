@@ -132,7 +132,7 @@ const config = {
             items: [
               {
                 label: 'Алгебра',
-                to: '/docs/square-equations/doc2',
+                to: '/docs/intro',
               },
               {
                 label: 'Геометрия',
