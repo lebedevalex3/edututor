@@ -28,7 +28,11 @@ const sidebars = {
     {
       type: 'category',
       label: 'Степень и свойства степени',
-      items: ['algebra/degree_exponent/doc1', 'algebra/degree_exponent/doc2'],
+      items: [
+        'algebra/degree_exponent/doc1',
+        'algebra/degree_exponent/doc2',
+        'algebra/degree_exponent/doc3',
+      ],
     },
   ],
   geo: [

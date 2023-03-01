@@ -9,6 +9,8 @@ id: intro
 
 #### [Теорема Виета](algebra/square-equations/vieta_theorem.mdx)
 
+#### [Степень с натуральным показателем](algebra/degree_exponent/doc1.mdx)
+
 ### Геометрия
 
 #### [Вписанные и описанные четырёхугольники](geometry/inscribed-quadrilateral/01inscribed.mdx)
