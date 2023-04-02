@@ -5,6 +5,10 @@ id: intro
 
 ## Материалы размещенные на сайте
 
+### Арифметика
+
+#### [Делители и кратные](arithmetic/01divNumbers/01div_multiples.mdx)
+
 ### Алгебра
 
 #### [Теорема Виета](algebra/square-equations/vieta_theorem.mdx)
