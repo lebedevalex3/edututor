@@ -53,6 +53,14 @@ const sidebars = {
       ],
     },
   ],
+  arifmet: [
+    {
+      type: 'category',
+      label: 'Делимость натуральных чисел',
+      items: ['arithmetic/01divNumbers/doc5'],
+    },
+  ],
+
   // latin: [
   //   {
   //     type: 'category',

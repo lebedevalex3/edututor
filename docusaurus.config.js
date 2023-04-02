@@ -98,6 +98,12 @@ const config = {
         },
         items: [
           {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'arifmet',
+            label: 'Арифметика',
+          },
+          {
             type: 'doc',
             docId: 'intro',
             position: 'left',
@@ -109,6 +115,7 @@ const config = {
             sidebarId: 'geo',
             label: 'Геометрия',
           },
+
           // {
           //   type: 'docSidebar',
           //   position: 'left',
