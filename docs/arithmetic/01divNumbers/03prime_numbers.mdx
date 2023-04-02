@@ -1,0 +1,31 @@
+---
+id: doc3
+title: Простые и составные числа
+---
+
+import TeX from '@matejmazur/react-katex';
+import Image from '@theme/IdealImage';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+Число $1$ имеет только один делитель - единицу. Любое другое натуральное число имеет, по крайней мере, два делителя - это само число и $1$. <br />
+Например, числа $2,3,5,7,11,13, ...$ имеют только по $2$ делителя: единицу и самого себя.
+
+<TeX math="3:3=1;\quad 3:1=3." block />
+
+У числа $12$ делителей больше двух - это числа $1,2,3,4,6,12.$
+:::info Определение
+Натуральное число называют **простым**, если оно имеет **только два натуральных делителя**: единицу и само это число.<br />
+Натуральное число называют **составным**, если оно имеет **больше двух натуральных делителей**.
+:::
+
+<Image
+  alt="простые числа"
+  img={require('./assets/01div_prop.png')}
+  width={'90%'}
+/>
