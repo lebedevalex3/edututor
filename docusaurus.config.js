@@ -152,7 +152,7 @@ const config = {
             items: [
               {
                 label: 'vk',
-                href: 'https://vk.com/id371761625',
+                href: 'https://vk.com/club219357210',
               },
             ],
           },
