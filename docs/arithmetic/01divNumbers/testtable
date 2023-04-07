@@ -1,0 +1,38 @@
+import BeautifulTable from '@site/src/components/BeautifulTable/BeautifulTable';
+
+<BeautifulTable
+  data={[
+    ['Заголовок 1', 'Заголовок 2', 'Заголовок 3'],
+    ['Строка 1, Ячейка 1', 'Строка 1, Ячейка 2', 'Строка 1, Ячейка 3'],
+    ['Строка 2, Ячейка 1', 'Строка 2, Ячейка 2', 'Строка 2, Ячейка 3'],
+    // ...дополнительные строки
+  ]}
+/>;
+
+<table className="beautiful-table">
+  <thead>
+    <tr>
+      <th rowspan="2">Объединенная строка</th>
+      <th colspan="2">Объединенный столбец</th>
+    </tr>
+    <tr>
+      <th>Заголовок 2</th>
+      <th>Заголовок 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Объединенная строка</td>
+      <td>Строка 1, Ячейка 2</td>
+      <td>Строка 1, Ячейка 3</td>
+    </tr>
+    <tr>
+      <td>Строка 2, Ячейка 2</td>
+      <td>Строка 2, Ячейка 3</td>
+    </tr>
+    <tr>
+      <td>Строка 3, Ячейка 1</td>
+      <td colspan="2">Объединенный столбец</td>
+    </tr>
+  </tbody>
+</table>;

@@ -12,6 +12,7 @@ keywords:
 description: 'В математике простые числа - это числа, которые делятся только на себя и на единицу, в то время как составные числа имеют дополнительные делители. Разложение числа на простые множители помогает упростить математические операции и лучше понимать свойства чисел.'
 ---
 
+import BeautifulTable from '@site/src/components/BeautifulTable/BeautifulTable';
 import TeX from '@matejmazur/react-katex';
 import Image from '@theme/IdealImage';
 import Tabs from '@theme/Tabs';
@@ -21,6 +22,8 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import IsPrime from '@site/src/components/IsPrime/IsPrime';
+import PrimeFactors from '@site/src/components/PrimeFactors/PrimeFactors';
 
 Число $1$ имеет только один делитель - единицу. Любое другое натуральное число имеет, по крайней мере, два делителя - это само число и $1$. <br />
 Например, числа $2,3,5,7,11,13, ...$ имеют только по $2$ делителя: единицу и самого себя.
@@ -33,16 +36,30 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 Натуральное число называют **составным**, если оно имеет **больше двух натуральных делителей**.
 :::
 
+Таким образом, все натуральные числа можно разбить на три группы:
+
+<BeautifulTable
+  data={[
+    ['Единица', 'Простые числа', 'Составные числа'],
+    ['Один делитель', 'Два делителя', 'Больше двух делителей'],
+    [
+      <TeX math="1" />,
+      <TeX math="2, 3, 5, 7, 11, 13,..." />,
+      <TeX math="4, 6, 8, 9, 10, 12, ...," />,
+    ],
+    // ...дополнительные строки
+  ]}
+/>
+
+:::caution Обратите внимание
+Число $1$ не является ни `простым`, ни `составным`.
+:::
+
 <Image
   alt="простые числа"
   img={require('./assets/01div_prop.png')}
   width={'90%'}
 />
-
-:::caution Обратите внимание
-
-Число $1$ не является ни `простым`, ни `составным`.
-:::
 
 ### Разложение на простые множители
 
@@ -53,29 +70,108 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 Последнее произведение отличается от других тем, что все его множители - `простые
 числа`. Говорят, что число $210$ **разложено на простые множители**.
 
+#### Пример №1
+
+Разложите число $60$ на простые множители.
+
+<Tabs>
+  <TabItem value="Пример 1" label="I-ый способ" default>
+   1. <TeX math="60"  /> делится на простое число <TeX math="2\!:\quad  60:2=30." /> <br/>
+   2. <TeX math="30"  /> делится на простое число <TeX math="2\!:\quad  30:2=15." /><br/>
+   3. <TeX math="15"  /> делится на простое число <TeX math="3\!:\quad  15:3=5." /><br/>
+   4. <TeX math="5"  /> делится на простое число <TeX math="5\!:\quad\;\;  5:5=1." /><br/>
+   Следовательно, <TeX math="60=2\cdot 2 \cdot 3 \cdot 5=2^2 \cdot 3 \cdot 5." /><br/>
+   Обычно процесс решения записывают так:
+
+<Image
+  alt="разложение числа на простые множители"
+  img={require('./assets/img05.png')}
+  width="50%"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+
+  </TabItem>
+<TabItem value="Пример №2" label="II-ой способ">
+Решение может быть представлено в виде дерева. 
+Для этого число разбивается на делители, а простые числа выделяются кружком. В результате получаем разложение исходного числа на простые множители.
+
+<Image
+  alt="разложение числа на простые множители"
+  img={require('./assets/img06.png')}
+  width="60%"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+
+  </TabItem>
+
+</Tabs>
+
 :::note
 Любое `составное число` можно представить в виде произведения `простых чисел`, то есть **разложить на простые множители**.
 :::
 
+### Примеры
+
 <Tabs>
-  <TabItem value="Пример 1" label="Пример №1" default>
+  <TabItem value="Пример 1" label="Пример №2" default>
    Разложение на простые множители: <TeX math="18=2 \cdot 3 \cdot 3"  /><br />
    Одинаковые множители можно заменить степенью: <TeX math="18=2 \cdot 3^2"  />
 
   </TabItem>
-<TabItem value="Пример №2" label="Пример №2">
+<TabItem value="Пример №2" label="Пример №3">
    Разложение на простые множители: <TeX math="80=2 \cdot 2 \cdot 2 \cdot 2 \cdot 5"  /><br />
    Одинаковые множители можно заменить степенью: <TeX math="80=2^4 \cdot 5"  />
 
   </TabItem>
   
-  <TabItem value="Пример №3" label="Пример №3">
+  <TabItem value="Пример №3" label="Пример №4">
    Разложение на простые множители: <TeX math="81=3 \cdot 3 \cdot 3 \cdot 3"  /><br />
    Одинаковые множители можно заменить степенью: <TeX math="81=3^4"  />
 
   </TabItem>
 
 </Tabs>
+
+#### Пример №5
+
+Записать все длители числа $a$, если $a=2\cdot 5 \cdot 7.$<br />
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Делителями числа являются все его простые множители, а также все возможные
+      комбинации произведений этих множителей.
+      <br />
+      <b>Делители:</b> <TeX math="\{1, 2,5,7,10,14,35,70\}" />
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
+### Вопросы для самоконтроля
+
+1. Какое натуральное число называют простым?
+2. Какое натуральное число называют составным?
+3. Почему число $1$ не относят ни к простым, ни к составным?
+4. Существует ли чётное простое число?
+5. Назовите наименьшее простое число.
+6. Любое ли составное число можно разложить на простые множители.
+
+### Калькулятор: является ли число простым
+
+<IsPrime />
+
+### Калькулятор: разложение числа на простые множители
+
+<PrimeFactors />
 
 ### Ресурсы урока {#pr}
 

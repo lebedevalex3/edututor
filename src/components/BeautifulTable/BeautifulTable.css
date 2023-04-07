@@ -1,0 +1,31 @@
+.mdx-content-wrapper .table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.beautiful-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.beautiful-table th,
+.beautiful-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.beautiful-table thead {
+  background-color: #f5f5f5;
+}
+
+.beautiful-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.beautiful-table tbody tr:hover {
+  background-color: #eaeaea;
+}
