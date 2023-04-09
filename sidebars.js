@@ -48,7 +48,7 @@ const sidebars = {
       type: 'category',
       label: 'Подобные треугольники',
       items: [
-        'geometry/similar_triangles/doc1gr',
+        'geometry/similar_triangles/doc1',
         'geometry/similar_triangles/doc2',
       ],
     },
