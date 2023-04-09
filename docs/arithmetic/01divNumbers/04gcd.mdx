@@ -10,8 +10,16 @@ keywords:
   ]
 ---
 
+import TeX from '@matejmazur/react-katex';
 import Image from '@theme/IdealImage';
 import Gcd from '@site/src/components/Gcd/Gcd';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 ### Что такое наибольший общий делитель
 
@@ -23,7 +31,7 @@ import Gcd from '@site/src/components/Gcd/Gcd';
   width={'90%'}
 />
 
-Общие делители чисел $26$ и $90$ выделены кружком, причём делитель $6$ является **наибольшим** среди них.
+Общие делители чисел $24$ и $90$ выделены кружком, причём делитель $6$ является **наибольшим** среди них.
 
 :::info Определение
 **Наибольшим общим делителем** двух чисел называется **наибольшее число**, на которое делится каждое из данных чисел.<br />
@@ -68,6 +76,68 @@ $46 = 2 \cdot 23$<br />
 Например, $\text{НОД}(17;43)=1$, $\text{НОД}(11;19)=1.$
 :::
 
+### Взаимно простые числа и признаки делимости
+
+Рассмотрим утверждение, которое позволяет сформулировать новые признаки делимости.
+
+:::tip Свойство
+Если $a$ делится на взаимно простые числа $m$ и $n$, то $a$ делится на их произведение $m \cdot n$. <br />
+Если же числа $m$ и $n$ не являются взаимно простыми, то из делимости числа $a$ на $m$ и $n$ не следует делимость числа $a$ на произведение $m \cdot n$.
+:::
+
+#### Как это работает?
+
+Выведем признак делимости на $6$. Как известно, $6=2\cdot 3$, причём числа $2$ и $3$ являются взаимно простыми. Значит, чтобы число $n$ делилось на $6$, достаточно, чтобы $n$ делилось на $2$ и на $3$.
+
+<Tabs>
+  <TabItem value="Пример 1" label="Пример №1" default>
+Известно, что число <TeX math="n"  /> делится на <TeX math="5"  /> и <TeX math="7"  />. Верно ли, что число <TeX math="n"  /> делится на <TeX math="35?"  />
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+    <b>Верно.</b><br />
+    Числа <TeX math="5"  /> и <TeX math="7"  /> являются взаимно простыми, следовательно, число <TeX math="n"  /> будет делится на произведение <TeX math="5\cdot 7"  />
+    </Typography>
+
+  </AccordionDetails>
+</Accordion>
+
+  </TabItem>
+<TabItem value="Пример №2" label="Пример №2">
+Известно, что число <TeX math="n"  /> делится на <TeX math="4"  /> и <TeX math="6"  />. Верно ли, что число <TeX math="n"  /> делится на <TeX math="24?"  />
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+    <b>Неверно.</b><br />
+    Числа <TeX math="4"  /> и <TeX math="6"  /> не являются взаимно простыми, следовательно, число <TeX math="n"  /> не обязательно должно делиться на  <TeX math="24"  />. Например, число <TeX math="36"  />.
+    </Typography>
+
+  </AccordionDetails>
+</Accordion>
+
+  </TabItem>
+
+</Tabs>
+
 ### Вопросы для самоконтроля
 
 1. Какое число называют наибольшим общим делителем двух чисел?
@@ -77,3 +147,7 @@ $46 = 2 \cdot 23$<br />
 ### Калькулятор: наибольший общий делитель
 
 <Gcd />
+
+### Ресурсы урока
+
+[Лист для работы на уроке (практика)](https://disk.yandex.ru/i/qiGrUXnQ4Wgwsw) <br/>
