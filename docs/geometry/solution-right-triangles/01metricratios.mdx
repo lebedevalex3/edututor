@@ -1,0 +1,119 @@
+---
+id: doc1
+title: Метрические соотношения в прямоугольном треугольнике
+keywords: [проекции катетов на гипотенузу]
+---
+
+import Image from '@theme/IdealImage';
+import TeX from '@matejmazur/react-katex';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+### Проекции катетов на гипотензу
+
+<Image
+  alt="проекции катетов"
+  img={require('./assets/geo01.png')}
+  width={'60%'}
+/>
+
+На рисунке отрезок $h-$ высота прямоугольного треугольника.
+:::info Определение
+Отрезки, на которые высота делит гипотенузу, называют проекциями катетов на гипотенузу.
+:::
+
+Часто проекции обозначают с помощью индексов. Например, запись $c_a$ указывает на то, что это проекция катета $a$ на гипотенузу $c$.
+
+### Теорема о высоте прямоугольного треугольника
+
+:::info Теорема
+Высота прямоугольного треугольника, проведённая к гипотенузе, делит треугольник на два подобных прямоугольных треугольника, каждый из которых подобен данному треугольнику.
+:::
+
+<Image
+  alt="подобные треугольники в прямоугольном треугольнике"
+  img={require('./assets/geo02.png')}
+  width={'60%'}
+/>
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Доказательство</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+
+<Image alt="" img={require('./assets/geo05.png')} width={'60%'} />
+Пусть в прямоугольном треугольнике <TeX math="ACB:" /> <TeX math="\angle A =\alpha" /> и <TeX math="\angle B =\beta." /> Сумма этих углов равна <TeX math="\alpha +\beta = 90^0." /> <br />
+Высота <TeX math="CH" /> делит треугольник <TeX math="ACB" /> на два прямоугольных треугольника в каждом из которых есть угол <TeX math="\alpha" /> и угол <TeX math="\beta." /> <br />
+Следовательно, все три треугольника подобны по двум углам: <TeX math="\triangle ACB \sim \triangle AHC \sim \triangle CHB." />
+</Typography>
+
+  </AccordionDetails>
+</Accordion>
+
+### Метрические соотношения в прямоугольном треугольнике
+
+Рассмотрим и докажем три равенства, которые называют **метрическими соотношениями в прямоугольном треугольнике**.
+
+:::info Теорема
+**Квадрат высоты** прямоугольного треугольника, проведённой к гипотенузе, равен произведению `проекций катетов` на гипотенузу:
+
+<TeX math="h^2=c_a\cdot c_b" block />
+<br />
+
+**Квадрат катета** равен произведению `гипотенузы` и `проекции этого катета` на
+гипотенузу <TeX math="c" />:
+
+<TeX math="a^2=c\cdot c_a, \quad b^2=c \cdot c_b." block />
+
+:::
+
+<Image
+  alt="метрические соотношения в прямоугольном треугольнике"
+  img={require('./assets/geo03.png')}
+  width={'70%'}
+/>
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Доказательство</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+
+<Image
+  alt=""
+  img={require('./assets/geo04.png')}
+  width={'60%'}
+/>
+На рисунке отрезок <TeX math="CH-" /> высота прямоугольного треугольника <TeX math="ABC" />
+. <br /> Докажем, что:<br/> 
+1) <TeX math="CH^2=AH \cdot HB" />,<br /> 2) <TeX math="AC^2=AH \cdot AB " />
+, <br />
+3) <TeX math="CB^2=BH \cdot AB. " /> <br /> <br />
+1) <TeX math="\triangle CBH \sim \triangle ACH \Rightarrow \dfrac{CH}{AH}=\dfrac{BH}{CH} \Rightarrow CH^2=AH \cdot HB." />
+<br /> <br />
+    2) <TeX math="\triangle ABC \sim \triangle ACH \Rightarrow \dfrac{AB}{AC}=\dfrac{AC}{AH} \Rightarrow  AC^2=AH \cdot AB." /> <br /> <br />
+    3) Аналогично предыдущему.
+    </Typography>
+
+  </AccordionDetails>
+</Accordion>

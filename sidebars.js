@@ -52,6 +52,11 @@ const sidebars = {
         'geometry/similar_triangles/doc2',
       ],
     },
+    {
+      type: 'category',
+      label: 'Решение прямоугольных треугольников',
+      items: ['geometry/solution-right-triangles/doc1'],
+    },
   ],
   arifmet: [
     {
