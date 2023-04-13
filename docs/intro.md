@@ -7,7 +7,7 @@ id: intro
 
 ### Арифметика
 
-#### [Делители и кратные](/docs/deliteli-i-kratnye)
+#### [Делители и кратные](/docs/modul-deliteli-i-kratnye)
 
 ### Алгебра
 

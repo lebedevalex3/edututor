@@ -1,22 +1,10 @@
 ---
 id: introTodivNumbers
 slug: /modul-deliteli-i-kratnye
-title: Обзор
+title: Обзор темы
 ---
 
 import BeautifulTable from '@site/src/components/BeautifulTable/BeautifulTable';
-
-## Делимость натуральных чисел
-
-Понимание `свойств делимости` чисел играет важную роль в изучении темы **"Обыкновенные дроби"**.
-
-Для упрощения обыкновенных дробей необходимо использовать свойства делимости чисел, например, нахождение `наибольшего общего делителя` (НОД) числителя и знаменателя, чтобы сократить дробь.
-
-Знание `свойств делимости` помогает находить общие знаменатели, складывать и вычитать дроби, а также упрощать результаты операций с дробями.
-
-Например, при сложении обыкновенных дробей необходимо привести их к `общему знаменателю`. Хорошее знание свойств делимости помогает быстро находить `наименьшее общее кратное` (НОК) знаменателей и домножать каждую дробь на подходящий множитель, чтобы получить общий знаменатель.
-
-<hr />
 
 ### Дорожная карта темы "Делимость натуральных чисел"
 
@@ -25,18 +13,18 @@ import BeautifulTable from '@site/src/components/BeautifulTable/BeautifulTable';
 stateDiagram-v2
   state "<b><a href ='/docs/deliteli-i-kratnye'> Делители и кратные</a></b><ul><li>делитель;</li><li>кратное;</li><li>чётные и нечётные числа.</li> </ul>" as s1
 
-  state "<b>Свойства делимости</b><ul><li>делится нацело;</li><li>делимость произведения;</li><li>делимость суммы.</li> </ul>" as s2
-  state "<b>Простые и составные числа</b><ul><li>простое число;</li><li>составное число;</li><li>разложение числа на простые множители.</li> </ul>" as s3
-   state "<b>Наибольший общий делитель</b><ul><li>наибольший общий делитель (НОД);</li><li>нахождение НОД;</li><li>взаимно простые числа.</li> </ul>" as s4
-   state "<b>Взаимно простые числа и признаки делимости</b>" as s5
-   state "<b>Наименьшее общее кратное</b><ul><li>наименьшее общее кртаное (НОК);</li><li>нахождение НОК;</li><li>НОК взаимно простых чисел.</li> </ul>" as s6
+  state "<b><a href ='/docs/svojstva-delimosti-chisel'> Свойства делимости</a></b><ul><li>делится нацело;</li><li>делимость произведения;</li><li>делимость суммы.</li> </ul>" as s2
+  state "<b><a href ='/docs/prostye-i-sostavnye-chisla'> Простые и составные числа</a></b><ul><li>простое число;</li><li>составное число;</li><li>разложение числа на простые множители.</li> </ul>" as s3
+   state "<b><a href ='/docs/naibolshij-obshchij-delitel'>Наибольший общий делитель</a></b><ul><li>наибольший общий делитель (НОД);</li><li>нахождение НОД;</li><li>взаимно простые числа.</li> </ul>" as s4
+   state "<b><a href ='/docs/naibolshij-obshchij-delitel#vd'>Взаимно простые числа и признаки делимости</a></b>" as s5
+   state "<b><a href ='/docs/naimenshee-obshchee-kratnoe'>Наименьшее общее кратное</a></b><ul><li>наименьшее общее кртаное (НОК);</li><li>нахождение НОК;</li><li>НОК взаимно простых чисел.</li> </ul>" as s6
   direction TB
   s1 --> s2
   s1 --> s3 : базовый уровень
   direction TB
   s2 --> s3
   s3 --> s4
-  s4 --> s5
+   s4 --> s5
   s5 --> s6
   s4 --> s6 : базовый уровень
 
@@ -46,7 +34,29 @@ stateDiagram-v2
 
 <hr />
 
-#### [Делители и кратные](/docs/deliteli-i-kratnye)
+## Ресурсы темы
 
-[Лист для работы на уроке](./assets/01deliteli-i-kratnye-lesson.pdf) <br/>
-[Лист для домашней работы](./assets/01deliteli-i-kratnye-homework.pdf) <br/>
+### [Делители и кратные](/docs/deliteli-i-kratnye)
+
+[Делители и кратные (работа на уроке)](./assets/01deliteli-i-kratnye-lesson.pdf) <br/>
+[Делители и кратные (домашняя работа)](./assets/01deliteli-i-kratnye-homework.pdf) <br/>
+
+### [Свойства делимости чисел](/docs/svojstva-delimosti-chisel)
+
+[Свойства делимости чисел (теория)](./assets/02svojstva-delimosti-chisel-theory.pdf) <br />
+Практика урока в ресурсах темы [Простые и составные числа](/docs/prostye-i-sostavnye-chisla#pr)
+
+### [Простые и составные числа](/docs/prostye-i-sostavnye-chisla)
+
+[Простые и составные числа ( теория)](./assets/03prostye-i-sostavnye-chisla-theory.pdf) <br />
+[Простые и составные числа (работа на уроке)](./assets/03prostye-i-sostavnye-chisla-lesson.pdf) <br />
+[Простые и составные числа ( домашняя работа)](./assets/03prostye-i-sostavnye-chisla-homework.pdf)
+
+### [Наибольший общий делитель](/docs/naibolshij-obshchij-delitel)
+
+[Наибольший общий делитель (работа на уроке)](./assets/04naibolshij-obshchij-delitel-lesson.pdf) <br/>
+[Наибольший общий делитель (домашняя работа)](./assets/04naibolshij-obshchij-delitel-homework.pdf) <br/>
+
+### [Наименьшее общее кратное](/docs/naimenshee-obshchee-kratnoe)
+
+[Наименьшее общее кратное (работа на уроке)](./assets/05naimenshee-obshchee-kratnoe-lesson.pdf)

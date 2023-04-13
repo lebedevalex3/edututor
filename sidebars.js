@@ -72,6 +72,7 @@ const sidebars = {
         'arithmetic/01divNumbers/doc3',
         'arithmetic/01divNumbers/doc4',
         'arithmetic/01divNumbers/doc5',
+        'arithmetic/01divNumbers/doc6',
       ],
     },
   ],
