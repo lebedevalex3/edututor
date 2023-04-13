@@ -62,6 +62,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Делимость натуральных чисел',
+      link: {
+        type: 'doc',
+        id: 'arithmetic/01divNumbers/introTodivNumbers',
+      },
       items: [
         'arithmetic/01divNumbers/doc1',
         'arithmetic/01divNumbers/doc2',
