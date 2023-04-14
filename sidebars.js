@@ -75,6 +75,11 @@ const sidebars = {
         'arithmetic/01divNumbers/doc6',
       ],
     },
+    {
+      type: 'category',
+      label: 'Обыкновенные дроби',
+      items: ['arithmetic/02commonFraction/doc1'],
+    },
   ],
 
   // latin: [
