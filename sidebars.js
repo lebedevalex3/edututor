@@ -81,6 +81,7 @@ const sidebars = {
       items: [
         'arithmetic/02commonFraction/doc1',
         'arithmetic/02commonFraction/doc2',
+        'arithmetic/02commonFraction/doc3',
       ],
     },
   ],

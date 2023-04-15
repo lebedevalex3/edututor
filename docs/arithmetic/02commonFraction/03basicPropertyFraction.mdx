@@ -1,0 +1,46 @@
+---
+id: doc3
+slug: /osnovnoe-svojstvo-drobi
+title: Основное свойство дроби
+keywords:
+  [
+    доля числа,
+    обыкновенная дробь,
+    числитель,
+    знаменатель,
+    как найти дробь от числа,
+  ]
+---
+
+import TeX from '@matejmazur/react-katex';
+import Image from '@theme/IdealImage';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+На рисунке одинаковые прямоугольники поделены на две, четыре и восемь равных частей. <br />
+
+<Image alt="" img={require('./assets/02frac12.png')} width={'80%'} />
+
+Дроби $\dfrac12, \dfrac24$ и $\dfrac48$ выражают `половину` равных прямоугольников, значит:
+
+<TeX math="\dfrac12 = \dfrac24=\dfrac48." block />
+
+Эту цепочку равенств можно записать иначе: <TeX math="\dfrac12 = \dfrac{1\cdot \textcolor{red}{2}}{2 \cdot \textcolor{red}{2}}=\dfrac{1 \cdot \textcolor{red}{4}}{2 \cdot \textcolor{red}{4}}." block />
+
+:::info основное свойство дроби
+Если `числитель` и `знаменатель` дроби **умножить на одно и то же натуральное число**, то **значение** дроби **не изменится**.
+
+<TeX math="\dfrac{k}{m} = \dfrac{k \cdot n}{m \cdot n}," block />
+где <TeX math="k, m" /> и <TeX math="n" /> - натуральные числа.
+
+:::
+
+:::caution обратите внимание
+Дроби <TeX math="\dfrac12, \dfrac24"  /> и <TeX math="\dfrac48"  /> равны.<br /> Это не разные дроби, а различные записи **одной и той же дроби** <TeX math="\dfrac12." />
+
+:::
