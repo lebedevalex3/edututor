@@ -13,7 +13,7 @@ id: intro
 
 #### [Теорема Виета](algebra/square-equations/vieta_theorem.mdx)
 
-#### [Степень с натуральным показателем](algebra/degree_exponent/doc1.mdx)
+#### [Степень с натуральным показателем](/docs/opredelenie-stepeni-s-naturalnym-pokazatelem)
 
 ### Геометрия
 

@@ -78,7 +78,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Обыкновенные дроби',
-      items: ['arithmetic/02commonFraction/doc1'],
+      items: [
+        'arithmetic/02commonFraction/doc1',
+        'arithmetic/02commonFraction/doc2',
+      ],
     },
   ],
 
