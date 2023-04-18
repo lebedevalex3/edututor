@@ -12,6 +12,7 @@ keywords:
   ]
 ---
 
+import './custom-image.css';
 import TeX from '@matejmazur/react-katex';
 import Image from '@theme/IdealImage';
 import Tabs from '@theme/Tabs';
@@ -21,10 +22,20 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import GeoGebra from '@site/src/components/GeoGebra/GeoGebra';
+
+<hr />
+
+#### Что нужно повторить:
+
+- [Наибольший общий делитель](/docs/naibolshij-obshchij-delitel) <br />
+- [Взаимно простые числа](/docs/naibolshij-obshchij-delitel#vpr)
+
+<hr />
 
 На рисунке одинаковые прямоугольники поделены на две, четыре и восемь равных частей. <br />
 
-<Image alt="" img={require('./assets/02frac12.png')} width={'80%'} />
+<Image alt="" img={require('./assets/02frac12.png')} width={'90%'} />
 
 Дроби $\dfrac12, \dfrac24$ и $\dfrac48$ выражают `половину` равных прямоугольников, значит:
 
@@ -35,12 +46,132 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 :::info основное свойство дроби
 Если `числитель` и `знаменатель` дроби **умножить на одно и то же натуральное число**, то **значение** дроби **не изменится**.
 
-<TeX math="\dfrac{k}{m} = \dfrac{k \cdot n}{m \cdot n}," block />
+<TeX
+  math="\dfrac{k}{m} = \dfrac{k \cdot \textcolor{red}{n}}{m \cdot \textcolor{red}{n}},"
+  block
+/>
 где <TeX math="k, m" /> и <TeX math="n" /> - натуральные числа.
 
 :::
+
+<br />
 
 :::caution обратите внимание
 Дроби <TeX math="\dfrac12, \dfrac24"  /> и <TeX math="\dfrac48"  /> равны.<br /> Это не разные дроби, а различные записи **одной и той же дроби** <TeX math="\dfrac12." />
 
 :::
+
+<hr />
+
+## Сокращение дробей
+
+Сравните части фигур на рисунке.
+
+<Image alt="" img={require('./assets/02frac13.png')} width={'90%'} />
+
+Эти части выражают `половину` круга, значит дроби $\dfrac{8}{16}, \dfrac48, \dfrac24$ и $\dfrac12$ равны между собой.
+
+:::info сокращение дроби
+**Сокращение дроби** - это **деление** `числителя` и `знаменателя` на их общий делитель, отличный от единицы. <br />
+В этом случае **значение** дроби **не изменится** и будет равно исходной дроби:
+
+<TeX
+  math="\dfrac{a \div \textcolor{red}{n}}{b \div \textcolor{red}{n}} = \dfrac{a}{b},"
+  block
+/>
+где <TeX math="n " /> - общий делитель.
+
+:::
+
+<br />
+
+Равенство $\dfrac{30}{48}=\dfrac{5\cdot 6}{8 \cdot 6}=\dfrac58$ получается в результате деления числителя и знаменателя дроби на общий множитель $6$.
+
+<br />
+
+:::info определение
+**Несократимая дробь** - это дробь, числитель и знаменатель которой - взаимно простые числа.
+:::
+
+<Tabs>
+  <TabItem value="Пример 1" label="Пример №1" default>
+ Сократить дробь <TeX math="\dfrac{75}{100}"  />   <br /><br />
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+    Разделим числитель и знаменатель дроби на их наибольший общий делитель  <TeX math="25\!:"  /> <br /> 
+      <Image alt="" img={require('./assets/02frac14.png')} className="custom-image" />
+    </Typography>
+
+  </AccordionDetails>
+</Accordion>
+
+  </TabItem>
+<TabItem value="Пример №2" label="Пример №2">
+
+Найти значение выражения: <TeX math="\dfrac{14 \cdot 9}{15 \cdot 7};"  /> <br /> <br />
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+          <Image alt="" img={require('./assets/02frac15.png')} className="custom-image" />
+    </Typography>
+
+  </AccordionDetails>
+</Accordion>
+
+  </TabItem>
+  </Tabs>
+
+<br />
+<br />
+
+### Способы сокращения дробей
+
+<Tabs>
+  <TabItem value="Пример 1" label="Полное сокращение (поиск НОД)" default>
+Сократить дробь  <TeX math="\dfrac{384}{512}" /> <br /><br />
+<b>I-ый шаг.</b> Находим наибольший общий делитель <TeX math="\text{НОД(384;512)}\!:" />  <br />
+<TeX math="384=2^7 \cdot 3, 512 = 2^8"/>, значит, <TeX math="\text{НОД(384; 512)} =2^7=128."/> <br /> <br />
+<b>II-ой шаг.</b> Делим числитель и знаменатель на <TeX math="\text{НОД(384;512)} =128" /> <br /> <br />
+
+<Image
+  alt=""
+  img={require('./assets/02frac16.png')}
+  className="custom-image"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+
+  </TabItem>
+
+<TabItem value="Пример №2" label="Последовательное сокращение">
+Сократить дробь  <TeX math="\dfrac{120}{168}" /> <br /><br />
+Делим числитель и знаменатель дроби на делители до получения <b>несократимой дроби</b>.
+<Image
+  alt=""
+  img={require('./assets/02frac17.png')}
+  className="custom-image"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+
+  </TabItem>
+  </Tabs>

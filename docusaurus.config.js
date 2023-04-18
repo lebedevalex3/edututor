@@ -8,7 +8,7 @@ const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Учебные материалы по школьной математике',
+  title: 'Школьная математика',
   tagline: 'Математика - это больше умение, чем знание',
   url: 'https://edututor.ru',
   baseUrl: '/',

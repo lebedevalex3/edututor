@@ -1,0 +1,23 @@
+/* custom-image.css */
+.custom-image {
+  display: block;
+  margin-left: 0;
+}
+
+@media (max-width: 575px) {
+  .custom-image {
+    width: 80%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .custom-image {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-image {
+    width: 40%;
+  }
+}
