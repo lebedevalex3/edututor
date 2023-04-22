@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 
 const GeoGebra = ({
-  appName = 'graphing',
+  appName = 'classic',
   materialId = '',
   width = 800,
   height = 600,
-  showToolBar = true,
-  showAlgebraInput = true,
-  showMenuBar = true,
+  showToolBar = false,
+  showAlgebraInput = false,
+  showMenuBar = false,
   showZoomButtons = false,
-  enableShiftDragZoom = true,
+  enableShiftDragZoom = false,
   showFullscreenButton = true,
 }) => {
   const [ggbScriptLoaded, setGgbScriptLoaded] = useState(false);
