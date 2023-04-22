@@ -34,6 +34,11 @@ const sidebars = {
         'algebra/degree_exponent/doc3',
       ],
     },
+    {
+      type: 'category',
+      label: 'Многочлены',
+      items: ['algebra/polinomials/doc3'],
+    },
   ],
   geo: [
     {
