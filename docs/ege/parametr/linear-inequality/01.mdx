@@ -1,0 +1,114 @@
+---
+id: doc1
+title: Линейные неравенства с параметром (подготовка)
+
+slug: /linejnye-neravenstva-parametry-podgotovka
+---
+
+import TeX from '@matejmazur/react-katex';
+import Image from '@theme/IdealImage';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+### №1
+
+Решить систему неравенств <br />
+$\begin{cases} x>a,\\x>5. \end{cases}$ <br /><br />
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Рассмотрим ряд случаев:
+      <br />
+      <br />
+      1. Если <TeX math="a=5" />, то <TeX math="x>5" />.<br />
+      2. Если <TeX math="a>5" />, то <TeX math="x>a" />.<br />
+      3. Если <TeX math="a<5" />, то <TeX math="x>a" />.<br />
+<Image
+  alt=""
+  img={require('./assets/param01.png')}
+  width="80%"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+    </Typography>
+
+  </AccordionDetails>
+</Accordion>
+
+### №2
+
+Решить систему неравенств <br /> $\begin{cases} x\leq a,\\x<3. \end{cases}$
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Рассмотрим ряд случаев:
+      <br />
+      <br />
+      1. Если <TeX math="a=3" />, то <TeX math="x<3" />.<br />
+      2. Если <TeX math="a>3" />, то <TeX math="x<3" />.<br />
+      3. Если <TeX math="a<3" />, то <TeX math="x\leq a" />.<br />
+      <Image
+        alt=""
+        img={require('./assets/param02.png')}
+        width="80%"
+        style={{ display: 'block', marginLeft: 0 }}
+      />
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
+### №3
+
+При каких значениях $a$ промежуток $[5;+\infty)$ принадлежит множеству решений системы $\begin{cases} x >3,\\x\geq a. \end{cases}$
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+     
+      <br />
+      1. Если <TeX math="a\leq 3" />, то <TeX math="x \in (3; +\infty)" />. Промежуток <TeX math="[5; +\infty]" /> принадлежит множеству решений. <br /> <br />
+      2. Если <TeX math="a>3" />, то <TeX math="x \in (a; +\infty)" />. В этом случае промежуток <TeX math="[5; +\infty]" /> будет принадлежать множеству решений только если <TeX math="3<a\leq 5." /> <br /><br />
+    
+          <Image
+        alt=""
+        img={require('./assets/param03.png')}
+        width="80%"
+        style={{ display: 'block', marginLeft: 0 }}
+      />
+    </Typography>
+
+  </AccordionDetails>
+</Accordion>

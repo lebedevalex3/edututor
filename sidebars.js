@@ -90,6 +90,13 @@ const sidebars = {
       ],
     },
   ],
+  ege: [
+    {
+      type: 'category',
+      label: 'Параметр',
+      items: ['ege/parametr/linear-inequality/doc1'],
+    },
+  ],
 
   // latin: [
   //   {

@@ -125,6 +125,12 @@ const config = {
             sidebarId: 'geo',
             label: 'Геометрия',
           },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'ege',
+            label: 'ЕГЭ',
+          },
 
           // {
           //   type: 'docSidebar',
