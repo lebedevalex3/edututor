@@ -37,7 +37,7 @@ $\begin{cases} x>a,\\x>5. \end{cases}$ <br /><br />
       <br />
       1. Если <TeX math="a=5" />, то <TeX math="x>5" />.<br />
       2. Если <TeX math="a>5" />, то <TeX math="x>a" />.<br />
-      3. Если <TeX math="a<5" />, то <TeX math="x>a" />.<br />
+      3. Если <TeX math="a<5" />, то <TeX math="x>5" />.<br />
 <Image
   alt=""
   img={require('./assets/param01.png')}
@@ -105,6 +105,38 @@ $\begin{cases} x>a,\\x>5. \end{cases}$ <br /><br />
           <Image
         alt=""
         img={require('./assets/param03.png')}
+        width="80%"
+        style={{ display: 'block', marginLeft: 0 }}
+      />
+    </Typography>
+
+  </AccordionDetails>
+</Accordion>
+
+### №4
+
+Решить систему неравенств $\begin{cases} x \geq 3,\\x\leq 2-a. \end{cases}$
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+     Выясним при каких значениях <TeX math="a" /> выражение <TeX math="2-a" />  равно <TeX math="3" />. Получаем  <TeX math="a=-1." /> <br />
+     Рассмотрим ряд случаев: <br /> <br />
+     1) <TeX math="a=-1;" /> тогда  <TeX math="\begin{cases} x \geq 3,\\x\leq 3. \end{cases}, \quad x=3." /> <br /><br />
+     2) <TeX math="a>-1;" /> тогда <TeX math="2-a<3." /> Система решений не имеет.<br /><br />
+     3) <TeX math="a<-1;" /> тогда <TeX math="2-a>3." />  <TeX math="x\in[3;2-a]." /> <br /><br />
+      <Image
+        alt=""
+        img={require('./assets/param04.png')}
         width="80%"
         style={{ display: 'block', marginLeft: 0 }}
       />
