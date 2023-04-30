@@ -81,7 +81,7 @@ $\begin{cases} x>a,\\x>5. \end{cases}$ <br /><br />
   </AccordionDetails>
 </Accordion>
 
-### №3
+### №3 (система с условием)
 
 При каких значениях $a$ промежуток $[5;+\infty)$ принадлежит множеству решений системы $\begin{cases} x >3,\\x\geq a. \end{cases}$
 
@@ -143,4 +143,116 @@ $\begin{cases} x>a,\\x>5. \end{cases}$ <br /><br />
     </Typography>
 
   </AccordionDetails>
+</Accordion>
+
+### №5 (Аналитический метод решения с графической интерпретацией ответа)
+
+Решить систему неравенств $\begin{cases} x > 2a+5,\\x > 4a+1. \end{cases}$
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+
+Выясним при каких значениях <TeX math="a" /> выражения <TeX math="2a+5" /> и <TeX math="4a+1" /> равны.<br />
+
+<TeX math="2a+5=4a+1," /> <br />
+<TeX math="a=2." />
+<br />
+<br />
+Рассмотрим три случая:
+<br />
+1. <TeX math="a=2: \begin{cases} x > 9,\\x > 9. \end{cases} \Rightarrow x>9," /> то
+есть <TeX math="x \in(9; +\infty)." /> <br /> <br />
+2. <TeX math="a< 2; " /> тогда <TeX math=" 2a+5>4a+1;" /> <TeX math="x\in(2a+5;+\infty)." /> <br /> <br />
+3. <TeX math="a>2; " /> тогда <TeX math="2a+5<4a+1; " /> <TeX math="x\in(4a+1; +\infty). " />
+<br />
+<br />
+<Image
+  alt=""
+  img={require('./assets/egeparam05.png')}
+  width="80%"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+
+Графический метод решения
+
+Проиллюстрируем ответ в системе координат <TeX math="aOx." />
+
+<Image
+  alt=""
+  img={require('./assets/param05-2.png')}
+  width="70%"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+Пользуясь осью ответа и графической интерпретацией ответа, проанализируем множество
+решений системы. <br />
+<br />
+1. Какие значения может принимать <TeX math="a" />, если <TeX math="x" /> принимает
+только положительные значения? <br />
+2. При каких значениях <TeX math="a" /> переменная <TeX math="x" /> принимает значения
+только большие <TeX math="2" />? <br />
+3. При каких значениях <TeX math="a" /> любое <TeX math="x \in [8;10]" /> удовлетворяет
+системе неравенств?
+<br />
+4. При каких значениях <TeX math="a" /> ни одно из чисел <TeX math="x \in [2;3]" /> не
+удовлетворяет системе неравенств?
+
+</Typography>
+</AccordionDetails>
+
+</Accordion>
+
+### №6 (Графический метод решения)
+
+Решите систему неравенств $\begin{cases} -2<x<4a+1,\\x <2a+6. \end{cases}$
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+Решим систему графически в системе координат <TeX math="(aOx)" />. <br /><br />
+1) <b>Строим графики функций </b> <TeX math="x=-2, x=4a+1, x=2a+6." /> Прямые на рисунке - пунктирные, поскольку неравенства системы строгие.
+ <br />
+
+<Image
+  alt=""
+  img={require('./assets/param06.png')}
+  width="70%"
+  style={{ display: 'block', marginLeft: 0 }}
+/>
+
+Каждая из прямых делит плоскость на две полуплоскости. <br />
+Стрелками указаны полуплоскости, координаты каждой из которых удовлетворяют соответствующему неравенству ( <TeX math="x>-2, x<4a+1, x<2a+6" />).
+Пересечение данных полуплоскостей удовлетворяет данной системе неравенств. <br /> <br /> 2. <b>Найдем координаты </b> точки <TeX math="A" /> (точка пересечения прямых <TeX math="x=-2"/> и <TeX math="x=4a+1"/>) и точки <TeX math="B" /> (точка пересечения прямых <TeX math="x=4a+1" /> и <TeX math="x=2a+6" />):
+
+<TeX math="\begin{cases} x=-2,\\x =4a+1, \end{cases} \quad \Rightarrow \begin{cases} x=-2,\\a=-\frac34, \end{cases} \quad \Rightarrow A(-\frac34;-2)." /> <br />
+<br />
+<TeX math="\begin{cases} x=4a+1,\\x =2a+6, \end{cases} \quad \Rightarrow \begin{cases} x=\frac52,\\x =11, \end{cases} \quad \Rightarrow B(\frac52;11)." /><br /><br />
+3.  <b>Заполним ось ответа: </b> <br/>
+    <Image
+      alt=""
+      img={require('./assets/param06-2.png')}
+      width="70%"
+      style={{ display: 'block', marginLeft: 0 }}
+    />
+       </Typography>
+      </AccordionDetails>
+
 </Accordion>
