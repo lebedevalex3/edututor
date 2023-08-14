@@ -62,6 +62,11 @@ const sidebars = {
       label: 'Решение прямоугольных треугольников',
       items: ['geometry/solution-right-triangles/doc1'],
     },
+    {
+      type: 'category',
+      label: 'Стереометрия',
+      items: ['geometry/stereo-basic/doc1'],
+    },
   ],
   arifmet: [
     {
@@ -90,6 +95,8 @@ const sidebars = {
         'arithmetic/02commonFraction/doc4',
       ],
     },
+
+   
   ],
   ege: [
     {
