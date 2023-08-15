@@ -11,7 +11,6 @@ keywords:
     пересечение плоскостей
   ]
 ---
-
 import TeX from '@matejmazur/react-katex';
 import Image from '@theme/IdealImage';
 import Gcd from '@site/src/components/Gcd/Gcd';
@@ -193,13 +192,13 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
     </Typography>
   </AccordionSummary>
   <AccordionDetails>
-    <Typography>
-    <ul>
-  <li>если прямая <TeX math="c" />  не имеет общих точек с плоскостью <TeX math="\alpha" /> , то <TeX math="c \cap \alpha =\emptyset" />;</li><br/>
-  <li>если прямая <TeX math="c" /> пересекает плоскость <TeX math="\alpha" />  в точке <TeX math="A" />, то <TeX math="c \cap \alpha =A" />;</li><br/>
-  <li>если прямая <TeX math="c" /> лежит в плоскости <TeX math="\alpha" />, то <TeX math="c \cap \alpha =c" /></li>.
-  </ul>
-    </Typography>
+    <div> {/* Используйте div вместо Typography */}
+      <ul>
+        <li>если прямая <TeX math="c" />  не имеет общих точек с плоскостью <TeX math="\alpha" /> , то <TeX math="c \cap \alpha =\emptyset" />;</li>
+        <li>если прямая <TeX math="c" /> пересекает плоскость <TeX math="\alpha" />  в точке <TeX math="A" />, то <TeX math="c \cap \alpha =A" />;</li>
+        <li>если прямая <TeX math="c" /> лежит в плоскости <TeX math="\alpha" />, то <TeX math="c \cap \alpha =c" /></li>
+      </ul>
+    </div>
   </AccordionDetails>
 </Accordion>
 
@@ -220,28 +219,25 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
     </Typography>
   </AccordionSummary>
   <AccordionDetails>
-    <Typography>
-    <ul>
-  Если ни одна из трёх данных плоскостей не имеет общих точек, то они разделяют пространство на 4 части.
- <Image
-  alt=""
-  img={require('./assets/stereo11.png')}
-  width={'50%'}
-  style={{ display: 'block', marginLeft: '0', marginRight: 'auto' }}
-/>
-
-В других случаях три плоскости могут делить пространство на 6, 7 или 8 частей.
- <Image
-  alt=""
-  img={require('./assets/stereo12.png')}
-  width={'80%'}
-  style={{ display: 'block', marginLeft: '0', marginRight: 'auto' }}
-/>
-
-  </ul>
-    </Typography>
+    <div> {/* Используйте div вместо Typography */}
+      Если ни одна из трёх данных плоскостей не имеет общих точек, то они разделяют пространство на 4 части.
+      <Image
+        alt=""
+        img={require('./assets/stereo11.png')}
+        width={'50%'}
+        style={{ display: 'block', marginLeft: '0', marginRight: 'auto' }}
+      />
+      В других случаях три плоскости могут делить пространство на 6, 7 или 8 частей.
+      <Image
+        alt=""
+        img={require('./assets/stereo12.png')}
+        width={'80%'}
+        style={{ display: 'block', marginLeft: '0', marginRight: 'auto' }}
+      />
+    </div>
   </AccordionDetails>
 </Accordion>
+
 
 #### Пример №3
 
@@ -295,8 +291,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
   height="315"
   src="https://www.youtube.com/embed/MVmrhNp7A70"
   title="YouTube video player"
-  frameborder="0"
+  frameBorder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
+  allowFullScreen
 ></iframe>
+
+
 

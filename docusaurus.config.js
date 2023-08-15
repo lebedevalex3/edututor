@@ -30,7 +30,7 @@ const config = {
     locales: ['ru'],
   },
   plugins: [
-    ['@docusaurus/plugin-ideal-image', {}],
+    ['@docusaurus/plugin-ideal-image', { quality: 70 }],
     [
       'docusaurus-plugin-yandex-metrica',
       {
