@@ -29,3 +29,10 @@
 .beautiful-table tbody tr:hover {
   background-color: #eaeaea;
 }
+
+.narrow-columns .beautiful-table th,
+.narrow-columns .beautiful-table td {
+  padding-left: 4px;
+  padding-right: 4px;
+  white-space: nowrap;
+}

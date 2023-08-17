@@ -71,6 +71,11 @@ const sidebars = {
   arifmet: [
     {
       type: 'category',
+      label: 'Целые числа',
+      items: ['arithmetic/001wholeNumbers/doc1'],
+    },
+    {
+      type: 'category',
       label: 'Делимость натуральных чисел',
       link: {
         type: 'doc',
@@ -95,8 +100,6 @@ const sidebars = {
         'arithmetic/02commonFraction/doc4',
       ],
     },
-
-   
   ],
   ege: [
     {
