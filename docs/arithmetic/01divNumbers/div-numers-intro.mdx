@@ -6,34 +6,6 @@ title: Обзор темы
 
 import BeautifulTable from '@site/src/components/BeautifulTable/BeautifulTable';
 
-### Дорожная карта темы "Делимость натуральных чисел"
-
-```mermaid
-
-stateDiagram-v2
-  state "<b><a href ='/docs/deliteli-i-kratnye'> Делители и кратные</a></b><ul><li>делитель;</li><li>кратное;</li><li>чётные и нечётные числа.</li> </ul>" as s1
-
-  state "<b><a href ='/docs/svojstva-delimosti-chisel'> Свойства делимости</a></b><ul><li>делится нацело;</li><li>делимость произведения;</li><li>делимость суммы.</li> </ul>" as s2
-  state "<b><a href ='/docs/prostye-i-sostavnye-chisla'> Простые и составные числа</a></b><ul><li>простое число;</li><li>составное число;</li><li>разложение числа на простые множители.</li> </ul>" as s3
-   state "<b><a href ='/docs/naibolshij-obshchij-delitel'>Наибольший общий делитель</a></b><ul><li>наибольший общий делитель (НОД);</li><li>нахождение НОД;</li><li>взаимно простые числа.</li> </ul>" as s4
-   state "<b><a href ='/docs/naibolshij-obshchij-delitel#vd'>Взаимно простые числа и признаки делимости</a></b>" as s5
-   state "<b><a href ='/docs/naimenshee-obshchee-kratnoe'>Наименьшее общее кратное</a></b><ul><li>наименьшее общее кртаное (НОК);</li><li>нахождение НОК;</li><li>НОК взаимно простых чисел.</li> </ul>" as s6
-  direction TB
-  s1 --> s2
-  s1 --> s3 : базовый уровень
-  direction TB
-  s2 --> s3
-  s3 --> s4
-   s4 --> s5
-  s5 --> s6
-  s4 --> s6 : базовый уровень
-
-
-
-```
-
-<hr />
-
 ## Ресурсы темы
 
 ### [Делители и кратные](/docs/deliteli-i-kratnye)
@@ -60,3 +32,29 @@ stateDiagram-v2
 ### [Наименьшее общее кратное](/docs/naimenshee-obshchee-kratnoe)
 
 [Наименьшее общее кратное (работа на уроке)](./assets/05naimenshee-obshchee-kratnoe-lesson.pdf)
+
+### Дорожная карта темы "Делимость натуральных чисел"
+
+```mermaid
+
+stateDiagram-v2
+  state "<b><a href ='/docs/deliteli-i-kratnye'> Делители и кратные</a></b><ul><li>делитель;</li><li>кратное;</li><li>чётные и нечётные числа.</li> </ul>" as s1
+
+  state "<b><a href ='/docs/svojstva-delimosti-chisel'> Свойства делимости</a></b><ul><li>делится нацело;</li><li>делимость произведения;</li><li>делимость суммы.</li> </ul>" as s2
+  state "<b><a href ='/docs/prostye-i-sostavnye-chisla'> Простые и составные числа</a></b><ul><li>простое число;</li><li>составное число;</li><li>разложение числа на простые множители.</li> </ul>" as s3
+   state "<b><a href ='/docs/naibolshij-obshchij-delitel'>Наибольший общий делитель</a></b><ul><li>наибольший общий делитель (НОД);</li><li>нахождение НОД;</li><li>взаимно простые числа.</li> </ul>" as s4
+   state "<b><a href ='/docs/naibolshij-obshchij-delitel#vd'>Взаимно простые числа и признаки делимости</a></b>" as s5
+   state "<b><a href ='/docs/naimenshee-obshchee-kratnoe'>Наименьшее общее кратное</a></b><ul><li>наименьшее общее кртаное (НОК);</li><li>нахождение НОК;</li><li>НОК взаимно простых чисел.</li> </ul>" as s6
+  direction TB
+  s1 --> s2
+  s1 --> s3 : базовый уровень
+  direction TB
+  s2 --> s3
+  s3 --> s4
+   s4 --> s5
+  s5 --> s6
+  s4 --> s6 : базовый уровень
+
+
+
+```
