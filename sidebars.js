@@ -65,7 +65,12 @@ const sidebars = {
     {
       type: 'category',
       label: 'Стереометрия',
-      items: ['geometry/stereo-basic/doc1', 'geometry/stereo-basic/doc2'],
+      items: [
+        'geometry/stereo-basic/doc1',
+        'geometry/stereo-basic/doc2',
+        'geometry/stereo-basic/doc3',
+        'geometry/stereo-basic/doc4',
+      ],
     },
   ],
   arifmet: [

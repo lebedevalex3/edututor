@@ -1,0 +1,112 @@
+---
+id: doc4
+slug: /postroenie-sechenij-mnogogrannikov
+title: Построение сечений многогранников
+keywords:
+  [
+    сечение,
+    построение сечения,
+    построение сечения параллелепипеда,
+    построение сечения пирамиды,
+  ]
+---
+
+import MathRender from '@site/src/components/MathAccordion/MathRender';
+import TeX from '@matejmazur/react-katex';
+import Image from '@theme/IdealImage';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+### Что такое сечение
+
+:::info Определение
+**Секущая плоскость многогранника** - плоскость, по обе стороны которой есть точки данного многогранника.
+
+**Сечение многогранника** – это многоугольник, сторонами которого являются эти отрезки, полученные пересечением секущей плоскости.
+:::
+
+`Секущая плоскость` пересекает грани многогранника по `отрезкам`.
+
+<Image img={require('./assets/stereo03-06.png')} width={'60%'} />
+
+Секущую плоскость можно задавать любым из известных нам способов:
+
+- тремя точками, не лежащими на одной прямой;
+- прямой и точкой, не принадлежащей ей;
+- двумя пересекающимися прямыми.
+
+Для построения сечения достаточно построить точки пересечения секущей плоскости с рёбрами многогранника. Затем каждые две такие точки, принадлежащие одной и той же грани, соединить отрезками. Многоугольник, полученный таким образом, будет `сечением многогранника`.
+
+### Построение сечения прямоугольного параллелепипеда и куба
+
+#### Пример 1
+
+Пусть $ABCDA_1B_1C_1D_1-$ куб. На его ребрах $AD$, $DC$ и $BB_1$ выбраны точки $M,N$ и $K$. Постройте сечение куба плоскостью $MNK$.
+
+<Image img={require('./assets/stereo03-07.png')} width={'60%'} />
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      1) Продолжим отрезки <MathRender>MN</MathRender> и{' '}
+      <MathRender>AB</MathRender>, которые лежат в одной и той же плоскости{' '}
+      <MathRender>ABC</MathRender>, до их пересечения в точке{' '}
+      <MathRender>S</MathRender>.<br />
+      Поскольку <MathRender>S \in AB</MathRender>, а <MathRender>
+        AB \subset (AA_1B)
+      </MathRender>, то <MathRender>S \in (AA_1B)</MathRender>. Следовательно, прямая{' '}
+      <MathRender>KS</MathRender> принадлежит плоскости сечения <MathRender>
+        MNK
+      </MathRender> и грани <MathRender>AA_1B_1B</MathRender>.<br /> 2) <MathRender>
+        SK \cap AA_1 =L
+      </MathRender>.<br />
+      <Image img={require('./assets/stereo03-08.png')} width={'60%'} />
+      3. Продолжим прямую <MathRender>MN</MathRender> до пересечения с прямой <MathRender>
+        BC
+      </MathRender> в точке <MathRender>F</MathRender>.<br />
+      4. Плоскость сечения <MathRender>MNK</MathRender> пересекает грань{' '}
+      <MathRender>BCC_1B_1 </MathRender> по прямой <MathRender>KF</MathRender> и
+      пересекает ребро <MathRender>CC_1</MathRender> в точке{' '}
+      <MathRender>P</MathRender>.<br />
+      <Image img={require('./assets/stereo03-09.png')} width={'60%'} />
+      5. Многоугольник <MathRender>KLMNP</MathRender> - искомое сечение.
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
