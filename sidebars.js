@@ -43,6 +43,11 @@ const sidebars = {
   geo: [
     {
       type: 'category',
+      label: 'Начала геометрии',
+      items: ['geometry/01basic-of-geometry/doc1'],
+    },
+    {
+      type: 'category',
       label: 'Вписанные и описанные четырехугольники',
       items: [
         'geometry/inscribed-quadrilateral/doc1',
