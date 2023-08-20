@@ -30,7 +30,11 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 `Секущая плоскость` пересекает грани многогранника по `отрезкам`.
 
-<Image img={require('./assets/stereo03-06.png')} width={'60%'} />
+<Image
+  img={require('./assets/stereo03-06.png')}
+  width={'60%'}
+  style={{ display: 'block', marginLeft: '0', marginRight: 'auto' }}
+/>
 
 Секущую плоскость можно задавать любым из известных нам способов:
 
@@ -46,7 +50,11 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 Пусть $ABCDA_1B_1C_1D_1-$ куб. На его ребрах $AD$, $DC$ и $BB_1$ выбраны точки $M,N$ и $K$. Постройте сечение куба плоскостью $MNK$.
 
-<Image img={require('./assets/stereo03-07.png')} width={'60%'} />
+<Image
+  img={require('./assets/stereo03-07.png')}
+  width={'60%'}
+  style={{ display: 'block', marginLeft: '0', marginRight: 'auto' }}
+/>
 
 <Accordion>
   <AccordionSummary
@@ -72,7 +80,11 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
       </MathRender> и грани <MathRender>AA_1B_1B</MathRender>.<br /> 2) <MathRender>
         SK \cap AA_1 =L
       </MathRender>.<br />
-      <Image img={require('./assets/stereo03-08.png')} width={'60%'} />
+      <Image
+        img={require('./assets/stereo03-08.png')}
+        width={'60%'}
+        style={{ display: 'block', marginLeft: '0', marginRight: 'auto' }}
+      />
       3. Продолжим прямую <MathRender>MN</MathRender> до пересечения с прямой <MathRender>
         BC
       </MathRender> в точке <MathRender>F</MathRender>.<br />
@@ -80,22 +92,69 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
       <MathRender>BCC_1B_1 </MathRender> по прямой <MathRender>KF</MathRender> и
       пересекает ребро <MathRender>CC_1</MathRender> в точке{' '}
       <MathRender>P</MathRender>.<br />
-      <Image img={require('./assets/stereo03-09.png')} width={'60%'} />
+      <br />
+      <Image
+        img={require('./assets/stereo03-09.png')}
+        width={'60%'}
+        style={{ display: 'block', marginLeft: '0', marginRight: 'auto' }}
+      />
+      <br />
       5. Многоугольник <MathRender>KLMNP</MathRender> - искомое сечение.
     </Typography>
   </AccordionDetails>
 </Accordion>
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+### Построение сечения пирамиды
+
+#### Пример 2
+
+Прямая $d$ пересекает боковые рёбра $QA$ и $QB$ тетраэдра $QABC$ в точках $M$ и $N$, точка $K$ принадлежит ребру основания $BC$. Построить сечение пирамиды, которое проходит через прямую $d$ и точку $K$.
+
+<Image
+  img={require('./assets/stereo03-10.png')}
+  width={'60%'}
+  style={{ display: 'block', marginLeft: '0', marginRight: 'auto' }}
+/>
+
+<Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>
+      <b>Решение</b>
+    </Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      1) Прямая <MathRender>d</MathRender> и <MathRender>AB</MathRender> лежат в
+      одной плоскости <MathRender>QAB</MathRender> и не параллельны. Пусть{' '}
+      <MathRender>S</MathRender> - точка их пересечения. Эта точка принадлежит
+      плоскости сечения и плоскости <MathRender>ABC</MathRender>. <br />
+      <Image
+        img={require('./assets/stereo03-12.png')}
+        width={'60%'}
+        style={{ display: 'block', marginLeft: '0', marginRight: 'auto' }}
+      />
+      <br />
+      2) Следовательно, плоскость сечения и плоскость <MathRender>
+        ABC
+      </MathRender> пересекаются по прямой <MathRender>SK</MathRender>. Прямая <MathRender>
+        SK
+      </MathRender> пересекает ребро <MathRender>AC</MathRender> в точке <MathRender>
+        L
+      </MathRender>. <br />
+      3) Многоугольник <MathRender>KLMN-</MathRender> искомое сечение.
+      <Image
+        img={require('./assets/stereo03-11.png')}
+        width={'60%'}
+        style={{ display: 'block', marginLeft: '0', marginRight: 'auto' }}
+      />
+    </Typography>
+  </AccordionDetails>
+</Accordion>
+
 <br />
 <br />
 <br />
