@@ -71,6 +71,7 @@ const sidebars = {
       type: 'category',
       label: 'Стереометрия',
       items: [
+        'geometry/stereo-basic/doc01',
         'geometry/stereo-basic/doc1',
         'geometry/stereo-basic/doc2',
         'geometry/stereo-basic/doc3',
