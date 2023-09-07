@@ -31,3 +31,30 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Стиль для изображения на больших экранах */
+.responsive-image {
+  width: 40vh;
+  display: block;
+  margin: auto;
+}
+
+/* Стиль для изображения на маленьких экранах (пример: ширина <= 768px) */
+@media (max-width: 768px) {
+  .responsive-image {
+    width: 60%;
+  }
+}
+/* Стиль для изображения на больших экранах */
+.responsive-image-long {
+  width: 60vh;
+  display: block;
+  margin: auto;
+}
+
+/* Стиль для изображения на маленьких экранах (пример: ширина <= 768px) */
+@media (max-width: 768px) {
+  .responsive-image-long {
+    width: 80%;
+  }
+}
