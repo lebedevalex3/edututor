@@ -47,7 +47,7 @@
 }
 /* Стиль для изображения на больших экранах */
 .responsive-image-long {
-  width: 60vh;
+  width: 40%;
   display: block;
   margin: auto;
 }
