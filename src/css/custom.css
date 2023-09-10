@@ -58,3 +58,30 @@
     width: 80%;
   }
 }
+/* Стиль для изображения на больших экранах */
+.responsive-image-large {
+  width: 30%;
+  display: block;
+  margin: auto;
+}
+
+/* Стиль для изображения на маленьких экранах (пример: ширина <= 768px) */
+@media (max-width: 768px) {
+  .responsive-image-large {
+    width: 70%;
+  }
+}
+
+/* Стиль для изображения на больших экранах */
+.responsive-image-min {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+/* Стиль для изображения на маленьких экранах (пример: ширина <= 768px) */
+@media (max-width: 768px) {
+  .responsive-image-min {
+    width: 70%;
+  }
+}
