@@ -31,16 +31,7 @@ const config = {
               trackLinks:true,
               accurateTrackBounce:true
          });
-      `,
-      attributes: {
-        type: 'text/javascript',
-      },
-    },
-    {
-      tagName: 'script',
-      innerHTML: `
-         // ... ваш предыдущий код метрики ...
-  
+         
          document.write('<noscript><div><img src="https://mc.yandex.ru/watch/92029994" style="position:absolute; left:-9999px;" alt="" /></div></noscript>');
       `,
       attributes: {
