@@ -16,6 +16,38 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.ico',
   trailingSlash: false,
+  headTags: [
+    {
+      tagName: 'script',
+      innerHTML: `
+         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+         m[i].l=1*new Date();
+         for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  
+         ym(92029994, "init", {
+              clickmap:true,
+              trackLinks:true,
+              accurateTrackBounce:true
+         });
+      `,
+      attributes: {
+        type: 'text/javascript',
+      },
+    },
+    {
+      tagName: 'script',
+      innerHTML: `
+         // ... ваш предыдущий код метрики ...
+  
+         document.write('<noscript><div><img src="https://mc.yandex.ru/watch/92029994" style="position:absolute; left:-9999px;" alt="" /></div></noscript>');
+      `,
+      attributes: {
+        type: 'text/javascript',
+      },
+    },
+  ],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -33,12 +65,6 @@ const config = {
     [
       '@docusaurus/plugin-ideal-image',
       { quality: 80, max: 800, disableInDev: false },
-    ],
-    [
-      'docusaurus-plugin-yandex-metrica',
-      {
-        counterID: '92029994',
-      },
     ],
   ],
   markdown: {
